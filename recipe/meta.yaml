@@ -9,12 +9,17 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 5a8ffe1c8c0ad1cc1f5030e1223ea27f8861ee0215a2a58a528cc61379e5ccab
+  patches:
+    - port3.patch
 
 build:
   number: 1003
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
+  build:
+    - patch          # [not win]
+    - m2-patch       # [win]
   host:
     - python
     - pip
