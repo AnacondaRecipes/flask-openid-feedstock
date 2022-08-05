@@ -13,7 +13,7 @@ source:
     - port3.patch
 
 build:
-  number: 1003
+  number: 1004
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
@@ -27,9 +27,9 @@ requirements:
   run:
     - python
     - flask >=0.3  # [py2k]
-    - flask >=0.10.1  # [py3k]
+    - flask >=0.10.1  # [not py2k]
     - python-openid >=2.0  # [py2k]
-    - python3-openid >=2.0  # [py3k]
+    - python3-openid >=2.0  # [not py2k]
 
 test:
   imports:
