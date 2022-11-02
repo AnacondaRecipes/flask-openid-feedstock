@@ -38,6 +38,7 @@ about:
   license: BSD 3-Clause
   license_file: LICENSE
   license_family: BSD
+  license_url: https://github.com/pallets-eco/flask-openid/blob/master/LICENSE
   summary: 'OpenID support for Flask'
   dev_url: http://github.com/mitsuhiko/flask-openid/
   doc_url: https://pythonhosted.org/Flask-OpenID/
