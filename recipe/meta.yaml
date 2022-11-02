@@ -43,6 +43,10 @@ about:
   dev_url: http://github.com/mitsuhiko/flask-openid/
   doc_url: https://pythonhosted.org/Flask-OpenID/
   doc_source_url: https://github.com/pallets-eco/flask-openid/blob/master/docs/index.rst
+  description: |
+    Flask-OpenID is an extension to Flask that allows you to
+    add OpenID based authentication to your website in a matter
+    of minutes.
 
 extra:
   recipe-maintainers:
