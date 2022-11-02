@@ -11,6 +11,7 @@ source:
   sha256: 5a8ffe1c8c0ad1cc1f5030e1223ea27f8861ee0215a2a58a528cc61379e5ccab
   patches:
     - port3.patch
+  skip: true  # [py<37]
 
 build:
   number: 0
@@ -26,10 +27,8 @@ requirements:
 
   run:
     - python
-    - flask >=0.3  # [py2k]
-    - flask >=0.10.1  # [not py2k]
-    - python-openid >=2.0  # [py2k]
-    - python3-openid >=2.0  # [not py2k]
+    - flask >=0.10.1
+    - python3-openid >=2.0
 
 test:
   imports:
