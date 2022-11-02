@@ -33,6 +33,10 @@ requirements:
 test:
   imports:
     - flask_openid
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: http://github.com/mitsuhiko/flask-openid/
