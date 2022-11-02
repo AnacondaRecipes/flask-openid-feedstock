@@ -41,6 +41,7 @@ about:
   summary: 'OpenID support for Flask'
   dev_url: http://github.com/mitsuhiko/flask-openid/
   doc_url: https://pythonhosted.org/Flask-OpenID/
+  doc_source_url: https://github.com/pallets-eco/flask-openid/blob/master/docs/index.rst
 
 extra:
   recipe-maintainers:
